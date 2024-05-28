@@ -3,7 +3,7 @@
 The files in this folder will be processed:
 
 ```shell
-export PDF_PATH=/mnt/data/netcdf
+export PDF_PATH=/mnt/data/pdf
 ```
 
 ```shell

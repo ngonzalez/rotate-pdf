@@ -23,10 +23,13 @@ class RotatePDF
     end
   end
   private
+  def filename(file)
+    file.split('/').last
+  end
   def rotate_pages(file)
     pdf = PDF.read file, lazy: true
     pdf.pages.each { |page| page.setRotate 90 }
-    pdf.save "/#{PDF_PATH}/export/%s" % file.split('/').last
+    pdf.save "/#{export_path}/%s" % filename(file)
   end
 end
 

@@ -2,7 +2,7 @@
 set -e
 
 function usage {
-    echo "usage: entrypoint.sh [--server|--help]"
+    echo "usage: entrypoint.sh [--rotate|--help]"
 }
 
 function rotate_pdf {
