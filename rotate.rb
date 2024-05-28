@@ -7,7 +7,6 @@ require 'origami'
 include Origami
 
 PDF_PATH = ENV['PDF_PATH']
-puts "PDF_PATH: #{PDF_PATH}"
 
 class RotatePDF
   attr_accessor :import_files, :export_path
